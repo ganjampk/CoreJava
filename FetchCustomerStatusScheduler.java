@@ -1,4 +1,4 @@
-package com.fisglobal.scheduler;
+package com.scheduler;
 
 import java.util.Hashtable;
 import java.util.List;
@@ -7,16 +7,16 @@ import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;
 
-import com.fis.pji.core.ErrorException;
-import com.fis.pji.core.ProfileSession;
-import com.fis.pji.generated.func.impl.PrfNotifications;
-import com.fisglobal.base.Application;
-import com.fisglobal.base.ApplicationResources;
-import com.fisglobal.base.Logger;
-import com.fisglobal.base.SanchezException;
-import com.fisglobal.host.ProfileSQL;
-import com.fisglobal.security.filter.UserSessionValidatorFilter;
-import com.fisglobal.utils.Utility;
+import com.core.ErrorException;
+import com.core.ProfileSession;
+import com.generated.func.impl.PrfNotifications;
+import com.Application;
+import com.ApplicationResources;
+import com.base.Logger;
+import com.base.SanchezException;
+import com.host.ProfileSQL;
+import com.security.filter.UserSessionValidatorFilter;
+import com.utils.Utility;
 
 public class FetchCustomerStatusScheduler {
 	private static final String channelId = "userSecurityAlert";
